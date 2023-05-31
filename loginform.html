@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_1280.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        h2 {
+            color: lightgreen;
+        }
+
+        p {
+            color: violet;
+        }
+
+        label {
+            color: red;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            background-color: lightyellow;
+            border-color: darkgreen;
+            color: purple;
+        }
+
+        input[type="submit"] {
+            background-color: orange;
+            border-color: darkorange;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Register</h2>
+                <p>Please fill this form to create an account.</p>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" name="confirm_password" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-primary" value="Submit">
+                    </div>
+                    <p>Already have an account? <a href="login.php">Login here</a>.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
